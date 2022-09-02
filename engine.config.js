@@ -1,3 +1,3 @@
 module.exports = {
-  featureDiscoveryRoot: "dist",
+  featureDiscoveryRoot: "./dist/gui",
 };
