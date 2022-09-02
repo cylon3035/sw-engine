@@ -1,14 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card } from "react-bootstrap";
+import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+
 import { Header } from "./header";
 
-export function App() {
+export function App({ ships }: { ships: string[] }) {
   return (
     <>
       <Header />
       <Card>
         <Card.Header>yo</Card.Header>
-        <Card.Body>eee</Card.Body>
+        <Card.Body>ships</Card.Body>
+        <ListGroup>
+          {ships.map((ship) => (
+            <ListGroupItem key={ship}>{ship}</ListGroupItem>
+          ))}
+        </ListGroup>
       </Card>
     </>
   );
