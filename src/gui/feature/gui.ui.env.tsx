@@ -1,6 +1,4 @@
-import { webWorkerInitializer } from "@wixc3/engine-core";
 import { uiEnv } from "../../react-renderer/feature/react-renderer.feature";
-import { backendEnv } from "../../swapi/swapi.feature";
 import { App } from "../ui/app";
 import guiFeature from "./gui.feature";
 
@@ -9,15 +7,11 @@ guiFeature.setup(
   (
     { run },
     {
-      COM: { communication },
       reactRenderer: { renderService },
-      swapi: { swapiData },
     }
   ) => {
     run(async () => {
-      await webWorkerInitializer({ communication, env: backendEnv });
-      const ships = await swapiData.getShips();
-      renderService.render(<App ships={ships} />);
+      renderService.render(<App ships={[]} />);
     });
   }
 );
