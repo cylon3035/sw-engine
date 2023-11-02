@@ -22,15 +22,15 @@
     "@types/react": "^18.0.18",
     "@types/react-bootstrap": "^0.32.30",
     "@types/react-dom": "^18.0.6",
-    "@wixc3/engineer": "^27.0.1",
+    "@wixc3/engineer": "^40.3.8",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
-    "typescript": "^4.8.2",
-    "webpack": "^5.74.0"
+    "typescript": "~5.2.2",
+    "webpack": "^5.89.0"
   },
   "dependencies": {
-    "@wixc3/engine-core": "^27.0.1",
+    "@wixc3/engine-core": "^40.3.8",
     "bootstrap": "^5.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",

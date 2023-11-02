@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["dom", "es2020"],
+    "lib": [
+      "dom",
+      "es2020"
+    ],
     "jsx": "react-jsx",
     "module": "commonjs",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "importsNotUsedAsValues": "error",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
